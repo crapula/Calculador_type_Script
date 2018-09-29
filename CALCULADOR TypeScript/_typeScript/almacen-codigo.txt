@@ -1,0 +1,14 @@
+
+       for (let index = 0; index < _datos.length; index++) {
+
+            if (_datos[index] == "*") {
+                _operador = operacion_Matematica({ datos_1: _datos[index - 1], datos_2: _datos[index + 1], simbolo: _datos[index] });
+                cadenaEstructura += _operador;
+            }
+            else {
+                cadenaEstructura += _datos[index];
+            }
+
+             
+
+        }
